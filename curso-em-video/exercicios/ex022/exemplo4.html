@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta CHARSET="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>capitulo 19 - exemplo 4</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        div {
+            height: 100%;
+            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+            background-size: 150px;
+            background-repeat: no-repeat;
+            animation: move_background 10s ease-out infinite;
+        }
+
+        @keyframes move_background {
+            0% {
+                background-position: left top;
+            }
+            10% {
+                background-position: center top;
+            }
+            20% {
+                background-position: right top;
+            }
+            30% {
+                background-position: right center;
+            }
+            40% {
+                background-position: center center;
+            }
+            50% {
+                background-position: left center;
+            }
+            60% {
+                background-position: left bottom;
+            }
+            70% {
+                background-position: center bottom;
+            }
+            80% {
+                background-position: right bottom;
+            }
+            90% {
+                background-position: center center;
+            }
+            100% {
+                background-position: left top;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div></div> 
+</body>
+</html>
