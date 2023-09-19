@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+ 
+
+/*O seletor '*' aplica as configurações a todos os elementos do arquivo html*/
+* {
+    margin: 0;
+}
+
+ 
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+}
+
+header {
+    height: 160px;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
+    font-family: var(--font0);
+}
+
+#header-titulo {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: var(--font1);
+    font-weight: lighter;
+    padding: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+}
+
+#header-texto {
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-family: var(--font0);
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+    margin: auto;
+}
+
+.menu {
+    background-color: var(--cor4);
+    padding: 15px 5px;
+}
+
+a.nav-button {
+    font-size: 1em;
+    margin: 0px 10px;
+    padding: 0px;
+    color: white;
+    font-family: var(--font0);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+    transition: 0.4s;
+}
+
+a.nav-button:hover {
+    background-color: #c5ebd667;
+    padding: 15px 15px;
+}
+
+main {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 1px 0px 35px 0px;
+}
+
+section {
+    width: 100%;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.644);
+    background-color: white;
+    padding: 15px;
+}
+
+section.video {
+    text-align: center;
+    position: relative;
+    background-color: var(--cor5);
+    height: 0px;
+    text-align: center;
+    padding-bottom: 60%;
+}
+
+section.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+h1#principal {
+    text-align: center;
+    color: var(--cor4);
+    font-family: var(--font2);
+    font-weight: normal;
+    font-size: 2.2em;
+    margin: 0px 0px 15px 0px;
+    padding: 15px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+}
+
+h2 {
+    font-family: var(--font2);
+    font-size: 1.7em;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, #063d1e48, white);
+    margin: 25px 0px;
+    border-radius: 8px 0 0 8px;
+    padding-left: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+}
+
+p {
+    text-indent: 25px;
+    font-family: var(--font0);
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.p-footer {
+    font-family: var(--font0);
+    font-size: 1em;
+    color: white;
+    font-weight: normal;
+    padding: 0;
+}
+
+span.destaque {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+a.link-externo {
+    background-color: rgba(26, 92, 55, 0.103);
+    color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.link-externo::after {
+    content: ' \1F517';
+}
+
+div.imagem {
+    margin: 30px auto;
+    text-align: center;
+}
+
+section.extra {
+    border-radius: 0px 0px 15px 10px;
+    padding-bottom: 30px;
+}
+
+aside.container-lista {
+    background-color: #c5ebd69f;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    margin-bottom: 35px;
+    margin-right: 1px;
+}
+
+h1#titulo-lista {
+    padding: 5px 5px 5px 15px;padding: 5px 5px 5px 15px;
+    font-size: 1.5em;
+    background-color: var(--cor4);
+    color: white;
+    font-weight: bold;
+    font-family: var(--font0);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.418);
+}
+
+ul {
+    list-style-type: '\2714\0020\00A0';
+    columns: 2;
+    list-style-position: inside;
+    padding: 15px 0 15px 40px;
+}
+
+footer {
+    height: 20px;
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 1px;
+}
+
+a.footer-link {
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a.footer-link::after {
+    content: ' \1F517';
+}
+
+img {
+    width: 100%;
+}
+
+div {
+    text-align: center;
+}
+
+img#bugdroid {
+    width: 300px;
+}

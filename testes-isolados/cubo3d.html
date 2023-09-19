@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta CHARSET="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cubo 3D</title>
+    
+    <style>
+        @keyframes rotate {
+            100% {
+                transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+
+        body {
+            margin: 0;
+            background: black;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            perspective: 100%;
+            perspective-origin: 100% 100%;
+        }
+
+        .cube {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 6s linear infinite;
+        }
+
+        .cube > div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0.9;
+            background-image: linear-gradient(to right, white, blue);
+        }
+
+        .s1 {
+            transform: translateZ(100px);
+        }
+
+        .s2 {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .s3 {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        .s4 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .s5 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .s6 {
+            transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>CUBO</h1>
+    <div class="container">
+        <div class="cube">
+            <div class="s1"></div>
+            <div class="s2"></div>
+            <div class="s3"></div>
+            <div class="s4"></div>
+            <div class="s5"></div>
+            <div class="s6"></div>
+        </div>
+    </div>    
+</body>
+</html>
