@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 22 - Iframes</title>
+</head>
+<body>
+    <h1>Teste de Iframe</h1>
+    <p>
+        Acesse o site
+        <iframe src="https://lribeiroalves.github.io/projeto-android/" frameborder="0" width="720" height="500" scrolling="no">[ Seu navegador não suporta iframes ]</iframe>
+        e faça muitos cursos!
+    </p>
+    <h1>Abrindo um conteúdo de um arquivo html local</h1>
+    <p>
+        <iframe src="pag001.html" frameborder="0"></iframe>
+    </p>
+    <h1>Iframe com conteudo gerado internamente</h1>
+    <p>
+        <iframe srcdoc="
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+            }
+        </style>
+        <h2>Teste de Título</h2>
+        <p>Esse documento foi gerado dinamicamente</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>C1</th>
+                <th>C2</th>
+                <th>C3</th>
+                <th>C4</th>
+            </tr>
+            <tr>
+                <th>L1</th>
+                <td>L1C1</td>
+                <td>L1C2</td>
+                <td>L1C3</td>
+                <td>L1C4</td>
+            </tr>
+            <tr>
+                <th>L2</th>
+                <td>L2C1</td>
+                <td>L2C2</td>
+                <td>L2C3</td>
+                <td>L2C4</td>
+            </tr>
+            <tr>
+                <th>L3</th>
+                <td>L3C1</td>
+                <td>L3C2</td>
+                <td>L3C3</td>
+                <td>L3C4</td>
+            </tr>
+            <tr>
+                <th>L4</th>
+                <td>L4C1</td>
+                <td>L4C2</td>
+                <td>L4C3</td>
+                <td>L4C4</td>
+            </tr>
+        </table>
+        " frameborder="0" height="250" scrolling="auto">[ Seu navegador não suporta iframes ]</iframe>
+    </p>
+    <h1>Iframe tendo seu destino alterado por um link</h1>
+    <iframe name="quadro" src="https://www.youtube.com/embed/v6uZGalVx-k?si=lXBtRcLvSyWBkA__" title="YouTube video player" frameborder="0" width="600" height="400" scrolling="auto" sandbox="sandbox" referrerpolicy="no-referer">[ Seu navegador não suporta iframes ]</iframe>
+    <p><a href="https://www.cursoemvideo.com" target="quadro">Abrir Curso em Vídeo</a></p>
+    <p><a href="https://www.youtube.com/embed/v6uZGalVx-k?si=lXBtRcLvSyWBkA__" title="YouTube video player" target="quadro">Abrir Youtube</a></p>
+</body>
+</html>
