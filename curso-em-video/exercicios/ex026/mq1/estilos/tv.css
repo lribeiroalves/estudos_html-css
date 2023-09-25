@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/back-tv.jpg);
+}
+
+div.container {
+    height: 35vh;
+    max-width: 25%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+div.icone {
+    background-image: url(../imagens/icon-tv.png);
+    height: 250px;
+    width: 250px;
+}

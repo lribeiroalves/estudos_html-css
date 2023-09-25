@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/back-phone.jpg);
+}
+
+div.container {
+    height: 35vh;
+    margin: auto;
+    border-radius: 20px;
+}
+
+div.icone {
+    background-image: url(../imagens/icon-phone.png);
+    height: 100px;
+    width: 100px;
+    top: 65%;
+}

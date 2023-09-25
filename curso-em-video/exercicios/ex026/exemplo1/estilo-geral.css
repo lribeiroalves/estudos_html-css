@@ -1,0 +1,28 @@
+/*Configurações Gerais*/
+body {
+    background-color: blue;
+    color: white;
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: red;
+    }
+}
+
+/*monitores desktop/notebook*/
+@media screen and (min-width: 992px) and (max-width: 1200) {
+    body {
+        background-color: yellow;
+        color: red;
+    }
+}
+
+/*Impressoras*/
+@media print {
+    body {
+        background-color: green;
+        color: black;
+    }
+}

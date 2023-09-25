@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    background-image: url(../../mq1/imagens/cev-portrait.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../../mq1/imagens/cev-landscape.jpg);
+    }
+}

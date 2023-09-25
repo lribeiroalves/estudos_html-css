@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #dedede;
+}
+
+header {
+    position: relative;
+    height: 5vh;
+    text-align: center;
+    background-color: #efefef;
+    padding: 10px;
+}
+
+div.menu-desktop {
+    display: none;
+}
+
+summary {
+    all: unset;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: grey;
+    color: white;
+}
+
+details {
+    background-color: lightgray;
+}
+
+details > ul {
+    padding: 5px 5px;
+}
+
+details li {
+    padding: 5px 0;
+    border-top: 1px solid gray;
+}
+
+details li.first {
+    border-top: none;
+}
+
+li > a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    width: 90vw;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+main > h1 {
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) and (orientation:landscape) {
+    header {
+        height: 15vh;
+    }
+}
+
+@media screen and (min-width:500px) and (min-height: 400px) {
+    .menu-celular {
+        display: none;
+    }
+
+    div.menu-desktop {
+        display: block;
+        background-color: #efefef;
+        padding: 10px 0;
+    }
+
+    div.menu-desktop > a {
+        background-color: lightgrey;
+        padding: 7px 10px 10px 10px;
+        margin-right: 5px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-top: 3px solid gray;
+        transition: 1s;
+    }
+
+    div.menu-desktop > a:hover {
+        margin: 0 20px;
+        background-color: white;
+    }
+
+    main {
+        max-width: 60vw;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        max-width: 30vw;
+    }
+}

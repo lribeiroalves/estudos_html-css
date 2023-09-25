@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/back-pc.jpg);
+}
+
+div.container {
+    height: 30vh;
+    max-width: 20%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+div.icone {
+    background-image: url(../imagens/icon-pc.png);
+    height: 200px;
+    width: 200px;
+}
