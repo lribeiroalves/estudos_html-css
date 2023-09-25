@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* configurações globais*/
+
+:root {
+    --cor0: #49a09d;
+    --cor1: #5f2c82;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 515px;
+    min-width: 250px;
+    max-width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.445);
+}
+
+main #container {
+    width: 100%;
+    height: 200px;
+    background-image: url(../imagens/metal.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+main h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+main p {
+    font-size: .8em;
+    margin: 0 10px;
+    margin-bottom: 5px;
+}
+
+form > fieldset {
+    position: relative;
+    background-color: var(--cor1);
+    text-align: right;
+    padding: 2px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+form span.symbol {
+    position: absolute;
+    color: white;
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+    top: 8px;
+    left: 10px;
+}
+
+form input.entrada {
+    all: unset;
+    background-color: #94cfcd;
+    height: 100%;
+    width: 78%;
+    border-radius: 9px;
+    margin-right: 1px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+form input.entrada:focus {
+    background-color: white;
+    border: 1px solid black;
+    margin-top: -1px;
+}
+
+form input.confirma, form input.recupera {
+    display: block;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 9px;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form input.confirma {
+    background-color: #53AAA7;
+    color: white;
+}
+
+form input.confirma:hover {
+    background-color: #2D6462;
+}
+
+form input.recupera {
+    background-color: white;
+    color: #2d6462bd;
+    font-size: 1.1em;
+}
+
+form input.recupera:hover {
+    background-color: #6CD3CF;
+}
