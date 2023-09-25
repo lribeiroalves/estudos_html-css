@@ -2,3 +2,43 @@
 
 /* configurações específicas para as midias */
 
+:root {
+    --cor0: #49a09d;
+    --cor1: #5f2c82;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    }
+
+    main {
+        min-width: 80vw;
+        min-height: 280px;
+        max-height: 280px;
+    }
+
+    div#container {
+        display: inline-block;
+        width: 30%;
+        height: 280px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    section#login {
+        position: absolute;
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+    }
+    
+    form > fieldset {
+        width: 100%;
+    }
+
+    form input.entrada {
+        width: 87.5%;
+    }
+
+}
